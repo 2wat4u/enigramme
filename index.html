@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigramme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Enigramme</h1>
+        <nav>
+            <!-- Barre de navigation -->
+            <label for="niveau">Niveau :</label>
+            <select id="niveau">
+                <option value="tous">Tous</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <label for="groupe">Groupe :</label>
+            <select id="groupe">
+                <option value="tous">Tous</option>
+                <option value="â">â</option>
+                <option value="ai">ai</option>
+                <option value="ail">ail</option>
+                <option value="aire">aire</option>
+                <option value="ant">ant</option>
+                <option value="au">au</option>
+                <option value="autre">autre</option>
+                <option value="è">è</option>
+                <option value="ê">ê</option>
+                <option value="eau">eau</option>
+                <option value="ei">ei</option>
+                <option value="eil">eil</option>
+                <option value="ent">ent</option>
+                <option value="eur">eur</option>
+                <option value="eux">eux</option>
+                <option value="finale_é">finale é</option>
+                <option value="î">î</option>
+                <option value="ï">ï</option>
+                <option value="ill">ill</option>
+                <option value="mb">mb</option>
+                <option value="ment">ment</option>
+                <option value="mm">mm</option>
+                <option value="mp">mp</option>
+                <option value="nn">nn</option>
+                <option value="ph">ph</option>
+                <option value="pp">pp</option>
+                <option value="que">que</option>
+                <option value="sc">sc</option>
+                <option value="sion">sion</option>
+                <option value="th">th</option>
+                <option value="tif">tif</option>
+                <option value="tion">tion</option>
+                <option value="tt">tt</option>
+                <option value="û">û</option>
+                <option value="w">w</option>
+                <option value="x">x</option>
+                <option value="y">y</option>
+                <option value="z">z</option>
+                <!-- Ajouter d'autres options de groupe -->
+            </select>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section pour la définition -->
+        <section id="definition-section" class="fixed-container">
+            <h2>Définition</h2>
+            <div id="definition" class="content-box"></div>
+        </section>
+
+        <!-- Section pour l'anagramme -->
+        <section id="anagramme-section" class="fixed-container">
+            <h2>Anagramme</h2>
+            <div id="anagramme" class="content-box"></div>
+        </section>
+
+        <!-- Section pour l'entrée utilisateur -->
+        <section id="input-section">
+            <h2>Entrez votre réponse</h2>
+            <div style="position: relative;">
+                <input type="text" id="guess" placeholder="Entrez votre réponse" />
+                <span class="icon" id="validation-icon"></span>
+            </div>
+            <div>
+                <button id="valider">Valider</button>
+                <button id="sauter">Passer</button>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <p>Enigramme - Un jeu pour enrichir votre vocabulaire</p>
+    </footer>
+
+    <!-- Modale pour afficher le message -->
+    <div id="modal" class="modal">
+        <div id="modal-message" class="modal-message"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
